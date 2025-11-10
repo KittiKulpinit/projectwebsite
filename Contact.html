@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section id="header">
+        <div class="LOGO">
+            <img src="CCP3.png" alt="CCP" />
+        </div>
+        <div class="LOGOM">
+            <img src="CCP3.png" alt="CCP" />
+        </div>
+
+        <div class="header-right">
+            <a class="nav" href="index.html">PROFILE</a>
+            <a class="nav" href="product.html">PRODUCTS</a>
+            <a class="nav" href="Reference.html">REFERENCE</a>
+            <a class="nav" href="Contact.html">CONTACT</a>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle"><span></span></label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="index.html">PROFILE</a></li>
+                    <li><a class="menu__item" href="product.html">PRODUCTS</a></li>
+                    <li><a class="menu__item" href="Reference.html">REFERENCE</a></li>
+                    <li><a class="menu__item" href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="product">
+        <div class="CCP">Contact
+            <div class="display">
+                <div class="info">
+                    <div class="ScopeW">
+                        <div class="ScopeH">CCP ALL COOLER CO., LTD. </div>
+                        <div class="ScopeI">
+                            <ul style="list-style-type: none;   margin: 0; padding: 0; ">
+                                <li>บริษัท ซีซีพี ออล คูลเลอร์ จำกัด</li>
+                                <li>เลขที่ 65 ซอยพหลโยธิน 69/2 ถนนพหลโยธิน</li>
+                                <li>แขวงอนุสาวรีย์ เขตบางเขน กรุงเทพฯ 10220</li>
+                                <li>------------------------------------</li>
+                                <li>Tel : 09-5247-9854</li>
+                                <li>Mobile : 08-5826-6422, 08-5997-8895</li>
+                                <li>E-mail : ccpallcooler@gmail.com</li>
+                                <li>ติดต่อฉุกเฉิน : 08-5826-6422(Pinyo)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="googlemap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.2770783303175!2d100.60162476959177!3d13.892471201032214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e28295e4f06fad%3A0x877f1aaded2d5158!2sCCP%20ALL%20COOLER%20CO.%2C%20LTD.!5e0!3m2!1sth!2sth!4v1753607187307!5m2!1sth!2sth"
+                        width="100%" height="100%" style="border:0; border-radius: 15px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Lower">
+        <div>Copyright©2017 CCP ALL COOLER CO., LTD All rights reserved</div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .info {
+            flex: 1;
+            background-color: #f7f7f7;
+            padding: 2rem;
+            height: 70vh;
+            box-sizing: border-box;
+            font-size: 1.1rem;
+            color: #333;
+            border-radius: 10px;
+            margin-right: 1rem;
+        }
+
+        .googlemap {
+            flex: 1;
+            height: 70vh;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .product {
+            margin: 3% 10% 5% 10%;
+        }
+
+        .display {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .Lower {
+            position: fixed;
+            bottom: 0;
+            background: #0048FF;
+            width: 100%;
+            text-align: center;
+            padding: 0.7rem 0;
+            font-size: 0.9rem;
+            color: #ffffff;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @media screen and (max-width: 800px) {
+            .Lower {
+                position: static;
+            }
+
+            .display {
+                flex-direction: column;
+            }
+
+            .info,
+            .googlemap {
+                width: 100%;
+                height: auto;
+                margin-right: 0;
+            }
+
+            .info {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</body>
+
+</html>
